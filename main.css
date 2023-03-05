@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'p';
+    src: url('/Poppins-Regular.ttf');
+}
+
+:root{
+
+    --bg:#0b0b0b;
+    --text:#fff;
+}
+
+body{
+
+    font-family: 'p';
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg);
+    color: var(--text);
+}
