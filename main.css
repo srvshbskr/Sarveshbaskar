@@ -1,11 +1,5 @@
-@font-face {
-  font-family: "p";
-  font-display: swap;
-  font-weight: 400;
-  src: url("/Poppins-Regular.ttf") format("truetype");
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap");
 .button {
   background-color: antiquewhite;
 }
@@ -28,7 +22,7 @@ body {
   background-color: var(--bg);
   color: var(--text);
   margin: 0 4vw;
-  font-family: "Open Sans";
+  font-family: "Poppins";
 }
 
 .navbar {
