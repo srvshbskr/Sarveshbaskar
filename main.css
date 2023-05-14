@@ -85,6 +85,15 @@ body {
   /* margin: 1em; */
 }
 
+.email-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2em;
+  /* margin: 1em; */
+}
+
 .social {
   height: 35px;
   width: 35px;
@@ -152,9 +161,16 @@ body {
 
 @media screen and (max-width: 768px) {
   body {
+    box-sizing: border-box;
+    margin: 0;
   }
-  .main {
-    top: 0;
+  .navbar {
+    width: auto;
+    margin: 0 7%;
+  }
+  .desc {
+    width: 100%;
+    margin: 0;
   }
   .home {
     display: grid;
@@ -165,6 +181,11 @@ body {
   .main {
     grid-area: m;
     width: 100%;
+    margin: 0 7%;
+  }
+
+  .btn {
+    margin-top: 2em;
   }
   .left {
     grid-area: l;
@@ -175,11 +196,16 @@ body {
   .column {
     display: flex;
     flex-direction: row;
+    width: 100%;
+    justify-content: center;
   }
   .line {
-    display: hidden;
+    display: none;
   }
   .right {
+    display: none;
+  }
+  .email-column {
     display: hidden;
   }
 }
