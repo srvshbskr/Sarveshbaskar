@@ -127,18 +127,24 @@ body {
 
 .main {
   position: relative;
-  top: 15vh;
+  top: 25vh;
   display: flex;
   flex-direction: column;
   grid-area: m;
 }
 
+.cta {
+  color: var(--bg);
+}
+
 .heading {
-  font-size: 3em;
+  font-size: 5em;
+  margin: 0;
 }
 
 .desc {
   margin: 0;
+  font-size: 1.1em;
 }
 
 .dull {
@@ -169,11 +175,12 @@ body {
     margin: 0 7%;
   }
   .heading {
-    font-size: 2em;
+    font-size: 3em;
   }
   .desc {
     width: 100%;
     margin: 0;
+    font-size: 1em;
   }
   .home {
     display: grid;
@@ -185,6 +192,7 @@ body {
     grid-area: m;
     width: 100%;
     margin: 0 7%;
+    top: 0;
   }
 
   .btn {
