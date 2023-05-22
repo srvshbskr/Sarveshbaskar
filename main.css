@@ -165,6 +165,56 @@ body {
   color: #0b0b0b;
 }
 
+.slide-up {
+  transform: translateY(-50px);
+  opacity: 0%;
+}
+.icon-slide-up {
+  transform: translateY(-50px);
+  opacity: 0%;
+}
+
+.opacity-fade {
+  opacity: 0;
+  /* transform: all 0.5s ease-out; */
+}
+
+.nav-opacity-fade {
+  opacity: 0;
+  /* transform: all 0.5s ease-out; */
+}
+
+.opacity-appear {
+  opacity: 1;
+  transition: all 0.2s ease-out;
+}
+
+.opacity-appear:nth-child(1) {
+  transition-delay: 100ms;
+}
+
+.appear {
+  transform: translateY(00px);
+  opacity: 1;
+  transition: all 0.7s ease-out;
+}
+
+.appear:nth-child(1) {
+  transition-delay: 500ms;
+}
+
+.appear:nth-child(2) {
+  transition-delay: 750ms;
+}
+
+.appear:nth-child(3) {
+  transition-delay: 1000ms;
+}
+
+.appear:nth-child(4) {
+  transition-delay: 1250ms;
+}
+
 @media screen and (max-width: 768px) {
   body {
     box-sizing: border-box;
