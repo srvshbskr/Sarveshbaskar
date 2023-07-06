@@ -6,9 +6,9 @@
 }
 
 :root {
-  --bg: #0b0b0b;
+  --bg: #0a0a0a;
   --text: #fff;
-  --secondary: #91a3fc;
+  --secondary: #91a1fc;
 }
 
 a {
@@ -227,12 +227,13 @@ body {
 
 .card {
   margin-top: 5%;
-  height: 70%;
-  width: 30%;
+  height: 80%;
   border-radius: 1em;
   position: relative;
   border: 1px solid rgb(68, 68, 68);
   z-index: -1;
+  min-width: 30%;
+  text-overflow: ellipsis;
 }
 
 .card-icon {
@@ -248,7 +249,7 @@ body {
 
 .card-heading {
   position: absolute;
-  top: 30%;
+  top: 20%;
   /* left: 30%; */
   display: flex;
   width: 100%;
@@ -257,19 +258,34 @@ body {
 
 .card-desc {
   position: absolute;
-  top: 40%;
+  top: 30%;
   left: 7%;
   opacity: 60%;
-  width: 35ch;
+  width: fit-content;
+  text-overflow: ellipsis;
+}
+
+.skillsection {
+  height: 90vh;
+  width: 100%;
+  position: relative;
+}
+
+.skillsection::before {
+  content: "My skills";
+  font-size: 4em;
+  position: absolute;
 }
 
 .slide-up {
-  transform: translateY(-50px);
+  transform: translateY(50px);
   opacity: 0%;
+  filter: blur(5px);
 }
 .icon-slide-up {
   transform: translateY(-50px);
   opacity: 0%;
+  filter: blur(1px);
 }
 
 .opacity-fade {
@@ -295,6 +311,7 @@ body {
   transform: translateY(00px);
   opacity: 1;
   transition: all 0.7s ease-out;
+  filter: blur(0);
 }
 
 .appear:nth-child(1) {
@@ -317,10 +334,11 @@ body {
   body {
     box-sizing: border-box;
     margin: 0;
+    overflow-x: hidden;
   }
   .navbar {
     width: auto;
-    margin: 0 7%;
+    margin: 0 1em;
   }
   .heading {
     font-size: 2em;
@@ -340,7 +358,7 @@ body {
   .main {
     grid-area: m;
     width: 100%;
-    margin: 0 7%;
+    margin: 0 1em;
     top: 10vh;
   }
 
@@ -396,7 +414,7 @@ body {
   }
 
   .card {
-    width: 100%;
+    width: 90%;
     height: 40%;
   }
 
@@ -406,5 +424,6 @@ body {
 
   .card-desc {
     top: 30%;
+    width: 30ch;
   }
 }
